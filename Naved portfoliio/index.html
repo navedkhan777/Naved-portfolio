@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <nav>
+          <h3 class="logo"><b>N</b>aved.</h3>
+          <ul id="sidemenu">
+            <li>
+              <a href="#Home" class="nav">Home</a>
+            </li>
+            <li><a href="#About" onclick="ScrollToAbout()">About</a></li>
+            <li>
+              <a href="#Services" onclick="ScrollToServices()">Services</a>
+            </li>
+            <li>
+              <a href="#Portfolio" onclick="ScrollToPortfolio()">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact Us" onclick="ScrollToContact()">Contact Us</a>
+            </li>
+
+            <span class="material-symbols-outlined" onclick="closemenu()">
+              close
+            </span>
+          </ul>
+          <span class="material-symbols-outlined" onclick="openmenu()">
+            menu
+          </span>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack web developer</p>
+          <h1>Hi,I am <span>Naved</span><br />Khan From India</h1>
+        </div>
+      </div>
+    </div>
+    <div class="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="asthetic.jpg" />
+          </div>
+          <div id="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              I'm a Professional web developer with over specializing in
+              creating visually appealing and responsive website using the
+              latest web technologies like HTML, CSS, JavaScript and React
+              proficient in various fronted-developer tools and framework like
+              Adobe XD,Figma,Sketch,React,Angular, and Vue Js, Commited to
+              delivering high-quality project on time Let's bring your projects
+              to like together Prices are negotiable and totally depend on time
+              of work.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">Projects</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing web/ App interfaces</li>
+                <li>
+                  <span>Development</span><br />Full stack Web Development
+                </li>
+                <li>
+                  <span>App Development</span><br />Building Android /IOS Apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Social media player</span><br />social media is a way
+                  for people to interact
+                </li>
+                <li>
+                  <span>Music app</span><br />There are many music application
+                  available
+                </li>
+                <li>
+                  <span>Online shoppping app</span><br />The app connect you yo
+                  the talented
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>B-tech</span><br />Computer science</li>
+                <li><span>Batch</span><br />2021-25</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <span class="material-symbols-outlined">code</span>
+            <h2>Fronted developer</h2>
+            <p>
+              A Front-End Developer is someone who creates websites and web
+              applications. The difference between Front-End and Back-End is
+              that Front-End refers to how a web page looks, while back-end
+              refers to how it works.
+            </p>
+            <a href="#">Learn more </a>
+          </div>
+          <div>
+            <span class="material-symbols-outlined">crop</span>
+            <h2>Backend developer</h2>
+            <p>
+              Backend developers build code that allows a database and an
+              application to communicate with one another. Backend developers
+              take care and maintain the back-end of a website, Including
+              databases, servers, and apps, and they control what you don't see.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <span class="material-symbols-outlined">sell</span>
+            <h2>Data Base</h2>
+            <p>
+              A database is an organized collection of structured information,
+              or data, typically stored electronically in a computer system. A
+              database is usually controlled by a database management system
+              (DBMS).
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="rells image.png" />
+            <div class="layer">
+              <h3>Social media player</h3>
+              <p>
+                Social media is a way for people to interact with each other by
+                creating, sharing, and exchanging ideas and information in
+                virtual networks and communities
+              </p>
+              <a href="#"
+                ><span class="material-symbols-outlined">link</span></a
+              >
+            </div>
+          </div>
+          <div class="work">
+            <img src="music app.jpg" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                There are many music applications available, including streaming
+                apps, music player apps, and music maker app
+              </p>
+              <a><span class="material-symbols-outlined"> link </span></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="shooping.jpg" />
+            <div class="layer">
+              <h3>Online shoppping app</h3>
+              <p>
+                The app connect you yo the talented people around the world
+                dowloda it from play store
+              </p>
+              <a><span class="material-symbols-outlined"> link</span></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <div class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>Naved2508310@gmail.com</p>
+            <p>7354603213</p>
+            <div class="social-icons">
+              <a href="#"
+                ><span class="material-symbols-outlined">call</span></a
+              >
+              <a><span class="material-symbols-outlined"> mail </span></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+            </div>
+            <a href="copy.webp" download class="btn btn2">Dowloda CV</a>
+          </div>
+          <div id="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="Email"
+                name="Email"
+                placeholder="Your Email"
+                require
+              />
+              <input
+                type="Message"
+                rows="6"
+                placeholder="Your Message"
+                required
+              />
+            </form>
+            <button type="submit" class="btn3">Submit</button>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright Kevin Made with by Easy Tutorial</p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
